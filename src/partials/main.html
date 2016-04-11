@@ -1,0 +1,7 @@
+Editing: {{editing}}
+<div class="editable">
+<ng-transclude contenteditable={{editing}}></ng-transclude>
+</div>
+<br>
+<button ng-show="!editing" ng-click="switchEditing()">Edit</button>
+<button ng-show="save" ng-click="switchEditing()">Save</button>
